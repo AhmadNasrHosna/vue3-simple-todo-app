@@ -10,10 +10,10 @@ defineProps({
   <ul class="c-todos">
     <div v-if="todos.length" class="c-todos__header">
       <h2 class="c-todos__title">Todos</h2>
-      <div class="c-todos__checkAll" @click="$emit('markAllDone')">
+      <div class="c-todos__check-all" @click="$emit('markAllDone')">
         Check all
       </div>
-      <div class="c-todos__removeAll" @click="$emit('removeAllTodos')">
+      <div class="c-todos__remove-all" @click="$emit('removeAll')">
         Remove all
       </div>
     </div>
@@ -50,8 +50,8 @@ defineProps({
   font-weight: 700;
 }
 
-.c-todos__checkAll,
-.c-todos__removeAll {
+.c-todos__check-all,
+.c-todos__remove-all {
   font-size: 14px;
   font-weight: 600;
   padding: 6px 10px;
@@ -62,12 +62,12 @@ defineProps({
   user-select: none;
 }
 
-.c-todos__checkAll:hover,
-.c-todos__removeAll:hover {
+.c-todos__check-all:hover,
+.c-todos__remove-all:hover {
   opacity: 1;
 }
 
-.c-todos__checkAll {
+.c-todos__check-all {
   margin-left: auto;
 }
 </style>
