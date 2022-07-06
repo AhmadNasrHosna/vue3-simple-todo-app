@@ -17,7 +17,7 @@
     </div>
 
     <div class="wrapper">
-      <div class="greetings">
+      <div class="header">
         <h1 class="green">Tada 🎉 App</h1>
         <h3>My First Vue 3 Project!</h3>
       </div>
@@ -36,19 +36,19 @@ h3 {
   font-size: 1.2rem;
 }
 
-.greetings h1 {
+.header h1 {
   font-family: "Craftwork Grotesk", system-ui, sans-serif;
   font-weight: 700;
 }
 
-.greetings h1,
-.greetings h3 {
+.header h1,
+.header h3 {
   text-align: center;
 }
 
 @media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
+  .header h1,
+  .header h3 {
     text-align: left;
   }
 }
